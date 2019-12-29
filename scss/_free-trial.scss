@@ -1,0 +1,26 @@
+.free-trial{
+    position: relative;
+    padding: 75px 3rem 40px;
+    background: #010101;
+    p{
+        font: 2rem $NAB;
+        text-transform: uppercase;
+        letter-spacing: 2.8px;
+        color: #fff;
+        text-align: center;
+    }
+    .btn{
+        max-width: 417px;
+        position: absolute;
+        background: #fff;
+        color: #d61100;
+        left: 0;
+        right: 0;
+        top: -40px;
+        margin: auto;
+        &:hover{
+            background:  #d61100;
+            color: #fff;
+        }
+    }
+}

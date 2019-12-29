@@ -1,0 +1,199 @@
+.qa{
+    background: #f6f6f6;
+    .container{
+        padding-top: 75px;
+    }
+    h3{
+        color: #1b65b3;
+        font-size: 5.5rem;
+        line-height: 4.6rem;
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: 6.5rem;
+    }
+}
+
+
+/*tabs*/
+.panel-shadow{
+    box-shadow: 0 0 4px rgba(24, 24, 24, 0.13);
+    padding-bottom: 25px;
+    background: #fffbeb;
+}
+.panel-heading a {
+    position: relative;
+    @include flex;
+    @include align-items(center);
+    background: #fffbeb;
+    padding: 28px 40px 30px 28px;
+    cursor: pointer;
+    &:hover{
+       background: #fff; 
+    }
+    .q{
+        text-transform: uppercase;
+        border-radius: 50%;
+        font-size: 3.2rem;
+        min-width: 60px;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        background: #ee2e31;
+        color: #fff;
+        text-align: center;
+        margin-right: 15px;
+        @include br2{
+            min-width: 40px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 25px;
+            margin-right: 10px;
+        }
+    }
+    .panel-heading-title{
+        color: #000;
+        h4{
+            font: 2.2rem $NAB;
+            padding-right: 40px;
+            @include br2{
+                padding-bottom: 15px;
+            }
+            @media screen and (max-width: 480px){
+                font-size: 2rem;
+            }
+        }
+    }
+}
+.panel-body{
+    background: #fff;
+    padding: 0 80px 0 104px;
+    @include br2{
+        padding-left: 80px;
+    }
+    p{
+        font-size: 1.8rem;
+        line-height: 2.8rem; 
+        padding-bottom: 10px;
+        strong{
+            font-family: $NAB;
+            font-weight: normal;
+        }
+        .border{
+            display: inline-block;
+            width: 8rem;
+            height: 1px;
+            background: #000;
+        }
+    }
+    ul li{
+        font-size: 1.8rem;
+        line-height: 2.8rem; 
+        list-style-type: lower-latin;
+        padding-bottom: 10px;
+        padding-left: 20px;
+    }
+    a{
+        color: #b12c51;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+.panel-heading a::after {
+ content: "\e800";
+ font: 25px "fontello";
+ position: absolute;
+ right: 4rem;
+ color: #ee2e31;
+ @include transition(transform .3s);
+}
+.panel-heading.in a::after {
+ transform: rotate(180deg);
+ color: #7a7a7a;
+}
+.panel-heading a::before{
+    position: absolute;
+    content: "";
+    width: 94%;
+    height: 1px;
+    background: #dcdcdc;
+    bottom: 0;
+    left:0;
+    right: 0;
+    margin: auto;
+}
+.panel-heading.in a::before{
+    background: transparent;
+}
+.panel-heading.in a {
+ background: #fff;
+ padding-bottom: 0;
+}
+.panel-collapse {
+ display: none;
+ padding-bottom: 20px;
+ background: #fff;
+ border-bottom: 1px solid #dcdcdc;
+}
+/*tabs --end*/
+
+
+
+.more-questions{
+    padding-top: 8.6rem;
+    padding-bottom: 10rem;
+    @include br2{
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+    h4{
+        color:#1B65B3;
+        font-size: 3.5rem;
+        line-height: 4.6rem;
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 6.5rem;
+        @include br2{
+            padding-bottom: 5rem;
+        }
+    }
+    &__contact{
+        li{
+            @include flex;
+            @include align-items(center);
+            padding: 12px 2rem 10px;
+            border-bottom: 1px solid #dcdcdc;
+            font-size: 2.2rem;
+            line-height: 3rem;
+            &:first-child{
+                border-top: 1px solid #dcdcdc;
+            }
+            @include br3{
+                font-size: 1.8rem;   
+                line-height: 2.5rem;
+            }
+            a{
+                font-family: $NAB;
+                color:#EE2E31;
+                &:hover{
+                    color: darken(#ee2e31, 20%);
+                }
+            }
+            span{
+                padding-right: 2rem;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

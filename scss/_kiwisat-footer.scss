@@ -1,0 +1,35 @@
+.kiwisat-footer{
+    .container{
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        text-align: center;
+    }
+    &__logo{
+        padding-bottom: 3.5rem;
+    }
+   &__text-soc{
+       p{
+        font-size: 11px;
+        line-height: 21px;
+        color: #9c9c9c;
+            &:first-child{
+                padding-bottom: 2.8rem;
+            }
+       }
+       .social{
+           padding-top: 2.5rem;
+           padding-bottom: 2.5rem;
+           li{
+               display: inline-block;
+           }
+           a{
+               color: #ee2e31;
+               font-size: 2rem;
+               padding: 0 1.5rem;
+               &:hover{
+                    color: darken(#ee2e31, 20%);
+               }
+           }
+       }
+    }
+}

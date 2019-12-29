@@ -1,0 +1,221 @@
+.kp{
+    @include flex;
+    @include justify-content(center);
+    @include flex-wrap;
+    overflow: hidden;
+    &__item{
+        position: relative;
+        width: (100%/3);
+        min-height: 652px;
+        @media screen and (max-width: 1070px){
+            min-height: 710px;
+        }
+        @include br2{
+            width: 100%;
+            min-height: 652px;
+        }
+        h2{
+            text-transform: uppercase;
+            font-size: 4.4rem;
+            padding-top: 33px;
+            padding-left: 20px;
+            color: #fff;
+        }
+        &:not(:first-child){
+            overflow: hidden;
+        }
+        .cost-wrap{
+            top: -2px;
+            left: -59px;
+        }
+        .btn-see{
+            display: block;
+            color: #f6f6f6;
+            font: 1.6rem $NAB;
+            text-transform: uppercase;
+            padding: 15px;
+            max-width: 231px;
+            width: 90%;
+            border: 1px solid #f6f6f6;
+            text-align: center;
+            margin: 35px auto auto;
+            &:hover{
+                background: #fff;
+            }
+        }
+        .btn-order{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        .kp-logo{
+            position: relative;
+            width: 75%;
+            min-height: 430px;
+            top: -58px;
+            margin-left: auto;
+            margin-right: 0;
+            @media screen and (max-width: 1220px){
+                right: -29px;
+                @include transform(scale(.8, .8));
+            }
+            @media screen and (max-width: 1070px){
+                top: 58px;
+                min-height: 488px;
+            }
+            @media screen and (max-width: 890px){
+                @include transform(scale(.68, .68));
+                top: 48px;
+                right: -33px;
+            }
+            @include br2{
+                min-height: 430px;
+                top: -5.8rem;
+                @include transform(scale(1, 1));
+                right: 0;
+            }
+            .square{
+                position: absolute;
+                background-color: #fff;
+                @include flex;
+                @include align-items(center);
+                @include justify-content(center);
+            }
+            .square130{
+                width: 130px;
+                height: 130px;
+            }
+            .square110{
+                width: 110px;
+                height: 110px;
+            }
+            .square100{
+                width: 100px;
+                height: 100px;
+            }
+            .square90{
+                width: 90px;
+                height: 90px;
+            }
+            .square80{
+                width: 80px;
+                height: 80px;
+            }
+        }
+        &:nth-child(1){
+            background-color: #005093;
+            background-image: linear-gradient(25deg, #005093, #009fea);
+            .cost{
+                .num{
+                    color: #0085ce;
+                }
+            }
+            .kp-logo{
+                .square:nth-child(1){
+                    right: 0;
+                    top: 79px;
+                }
+                .square:nth-child(2){
+                    right: 110px;
+                    top: 189px;
+                }
+                .square:nth-child(3){
+                    right: 240px;;
+                    top: 319px;
+                }
+                .square:nth-child(4){
+                    right: 10px;;
+                    top: 319px;
+                }
+                .square:nth-child(5){
+                    right: 160px;;
+                    top: 409px;
+                }
+            }
+            .btn-see:hover{
+                color: #009fea;
+            }
+        }
+        &:nth-child(2){
+            background-color: #0170e9;
+            background-image: radial-gradient(at 50% -50%, #0170e9, #0c48aa);
+            .cost{
+                .num{
+                    color: #0c48aa;
+                }
+            }
+            .kp-logo{
+                .square:nth-child(1){
+                    right: 130px;
+                    top: 70px;
+                    @media screen and (max-width: 410px){
+                        width: 100px;
+                        height: 100px;
+                        right: 220px;
+                        top: 210px;
+                    }
+                }
+                .square:nth-child(2){
+                    right: 0;
+                    top: 180px;
+                }
+                .square:nth-child(3){
+                    right: 130px;;
+                    top: 310px;
+                }
+                .square:nth-child(4){
+                    right: 220px;;
+                    top: 400px;
+                }
+                .square:nth-child(5){
+                    right: 50px;;
+                    top: 400px;
+                }
+            }
+            .btn-see:hover{
+                color: #0170e9;
+            }
+        }
+        &:nth-child(3){
+            background-color: #9205cd;
+            background-image: radial-gradient(at 20% -50%, #9205cd, #411466);
+            .cost{
+                .num{
+                    color: #561081;
+                }
+            }
+            .kp-logo{
+                .square:nth-child(1){
+                    right: 0;
+                    top: 59px;
+                }
+                .square:nth-child(2){
+                    right: 80px;
+                    top: 139px;
+                }
+                .square:nth-child(3){
+                    right: 190px;;
+                    top: 249px;
+                }
+                .square:nth-child(4){
+                    right: 280px;;
+                    top: 339px;
+                    @media screen and (max-width: 410px){
+                        right: 0;
+                        top: 249px;
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+                .square:nth-child(5){
+                    right: 60px;;
+                    top: 339px;
+                }
+            }
+            .btn-see:hover{
+                color: #9205cd;
+            }
+        }
+
+    }
+}

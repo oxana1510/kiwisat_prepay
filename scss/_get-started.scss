@@ -1,0 +1,122 @@
+.get-started{
+    background: #f6f6f6;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+    &__header{
+        background: #fff;
+        padding: 3.5rem;
+        @include flex;
+        @include align-items(center);
+        @include br2{
+            @include flex-wrap;
+            @include justify-content(center);
+        }
+        &-logo{
+            padding-right: 3rem;
+            img{
+                width: 100%;
+            }
+            @include br2{
+                padding-right: 0;
+                padding-bottom: 2rem;
+            }
+        }
+        &-text{
+            h2{
+                color: #ee2e31;
+                font-size: 7rem;
+                line-height: 5.6rem;
+                @media screen and(max-width: 1100px){
+                    font-size: 6rem;
+                    line-height: 5rem;
+                }
+                @include br2{
+                    padding-bottom: 1rem;
+                }
+            }
+            p{
+                font-size: 3.2rem;
+                line-height: 6rem;
+                @media screen and(max-width: 1100px){
+                    font-size: 2.2rem;
+                    line-height: 3.8rem;
+                }
+                .hour{
+                    display: inline-block;
+                    max-width: 250px;
+                    font-size: 4rem;
+                    color: #fff;
+                    border-radius: 28px;
+                    background: #ee2e31;
+                    text-align: center;
+                    padding: 0 2rem;
+                    @media screen and(max-width: 1100px){
+                        font-size: 3rem;
+                    }
+                }
+            }
+            @include br2{
+                text-align: center;
+            }
+        }
+    }
+    &__item{
+        @include flex;
+        background-color: #af070a;
+        background-image: linear-gradient(-50deg, #af070a, #e92b2e);
+        padding-top: 30px;
+        padding-bottom: 30px;
+        @include br2{
+            flex-wrap: wrap;
+        }
+    }
+    &__items{
+        color: #fff;
+        padding: 5px 2.8rem 20px;
+        text-align: center;
+        width: (100%/3);
+        &:not(:last-child){
+            border-right: 1px solid rgba(255, 255, 255, .4);
+            @include br2{
+                border-right: none;
+            }
+        }
+        @include br2{
+            width: 90%;
+            margin: auto;
+            padding: 20px 2rem 20px;
+            &:not(:last-child){
+                border-bottom: 1px solid rgba(255, 255, 255, .4);
+            }
+        }
+        .step{
+            background: url("../img/step.png") center no-repeat;
+            background-size: contain;
+            padding: 4rem 0 2rem;
+            margin-bottom: 3rem;
+            span{
+                display: block;
+            }
+            &__num{
+                color: #ee2e31;
+                font-size: 7rem;
+                padding-bottom: 25px;
+            }
+            &__word{
+                font-size: 3.2rem;
+                color: #000;
+            }
+        }
+        .cost{
+            font: 4.8rem/3.5rem $NAB;
+        }
+        .title{
+            font: 2.8rem $NAB;
+        }
+        .text{
+            font-family: $NAT;
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+        }
+    }
+}

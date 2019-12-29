@@ -1,0 +1,193 @@
+.why-us{
+    color: #fff;
+    background-color: #084a8f;
+    background: linear-gradient(-143deg, #084a8f 30%, #117ac8);
+    overflow: hidden;
+    .container{
+        position: relative;
+        @include flex;
+        flex-direction: column;
+        padding-top: 140px;
+        padding-bottom: 145px;
+        max-width: 1190px;
+        width: 93%;
+        @include br2{
+            padding-top: 100px;
+            padding-bottom: 736px;
+        }
+        @include br3{
+            padding-bottom: 700px;
+        }
+        @media screen and (max-width: 480px){
+            padding-bottom: 550px;
+        }
+        @media screen and (max-width: 380px){
+            padding-bottom: 500px;
+        }
+    }
+    h2{
+        color: #fdfdfd;
+        font: 7rem/5.6rem $NAB;
+        padding-bottom: 25px;
+        @include br1{
+            font-size: 6rem;
+        }
+        @include br2{
+            margin: auto;
+        }
+    }
+    &__logo{
+        position: relative;
+        padding-bottom: 35px;
+        z-index: 2;
+        @include br2{
+            margin: auto;
+        }
+    }
+    h3{
+        position: relative;
+        color: #99d3ff;
+        font: 6rem/5.6rem $NAB;
+        text-transform: uppercase;
+        padding-bottom: 40px;
+        z-index: 2;
+        @include br1{
+            font-size: 5rem;
+        }
+        @include br2{
+            margin: auto;
+        }
+    }
+    p{
+        color: #fdfdfd;
+        font-size: 3.2rem;
+        line-height: 6rem;
+        padding-bottom: 40px;
+        @include br1{
+            font-size: 2.2rem;
+            line-height: 3rem;
+        }
+        @include br2{
+            margin: auto;
+        }
+    }
+    .btn{
+        position: relative;
+        background: #ee2e31;
+        color: #fff;
+        max-width: 489px;
+        z-index: 2;
+        text-transform: uppercase;
+        padding-left: 2.9rem;
+        padding-right: 2.9rem;
+        font-size: 3rem;
+        &:hover{
+            color: #ee2e31;
+            background: #fff;
+        }
+        @include br1{
+            font-size: 2.8rem;
+        }
+        @include br2{
+            margin: auto;
+        }
+        @media screen and (max-width: 480px){
+            font-size: 2.4rem;
+        }
+        @media screen and (max-width: 480px){
+            font-size: 1.6rem;
+        }
+    }
+    &__flower{
+        position: absolute;
+        width: 811px;
+        height: 820px;
+        right: -117px;
+        top: 89px;
+        @media screen and (max-width: 1100px){
+            @include transform(scale(.8, .8));
+            top: 0;
+        }
+        @include br1{
+            right: -170px;
+        }
+        @media screen and (max-width: 830px){
+            @include transform(scale(.7, .7));
+        }
+        @include br2{
+            right: 0;
+            left: calc(50% - 291px);
+            top: auto;
+            bottom: -130px;
+            @include transform(scale(.8, .8));
+            transform-origin: -154px 0;
+        }
+        @include br3{
+            @include transform(scale(.7, .7));
+            bottom: -190px;
+            left: calc(50% - 236px);
+        }
+        @media screen and (max-width: 480px){
+            @include transform(scale(.55, .55));
+            left: calc(50% - 149px);
+            bottom: -320px;
+        }
+        @media screen and (max-width: 380px){
+            @include transform(scale(.5, .5));
+            left: calc(50% - 126px);
+            bottom: -350px;
+        }
+        &-item{
+            position: absolute;
+            border-radius: 50%;
+            width: 210px;
+            height: 210px;
+            background:  #fcfeff;
+            box-shadow: 0 0 0 50px rgba(252, 254, 255, .3);
+            @include flex;
+            flex-direction: column;
+            @include justify-content(center);
+            @include align-items(center);
+            &:nth-child(1){
+                left: 115px;
+                top: 126px;
+            }
+            &:nth-child(2){
+                top: 52px;
+                right: 235px;
+            }
+            &:nth-child(3){
+                top: 377px;
+                left: 53px;
+            }
+            &:nth-child(4){
+                top: 306px;
+                left: 306px;
+            }
+            &:nth-child(5){
+                top: 233px;
+                right: 45px;
+            }
+            &:nth-child(6){
+                bottom: 50px;
+                left: 241px;
+            }
+            &:nth-child(7){
+                bottom: 123px;
+                right: 108px;
+            }
+            .no{
+                color: #ee3031;
+                font: 28px $NAB;
+                text-transform: uppercase;
+                padding: 10px 0 5px;
+            } 
+            .words{
+                color: #090e0f;
+                font-size: 18px;
+                text-align: center;
+                width: 50%;
+            }
+        }
+    }
+}
